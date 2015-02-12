@@ -1,0 +1,43 @@
+.clear{clear:both;}
+.alert{ height: 20px;}
+.right{ float:right}
+
+.privilege_checkbox{ float:left; width:185px; margin: 3px;}
+.role_checkbox{ float:left; width:140px; margin: 3px;}
+
+#privilege_list{ }
+
+/* 弹窗 */
+.window{
+ width:250px;
+ background-color:#3FF;
+ padding:2px;
+ margin:5px;
+ position:absolute;
+ display:none;
+ }
+.w_content{
+ height:150px;
+ 
+ padding:2px;
+ font-size:14px;
+ overflow:auto;
+ }
+.w_title{
+ padding:2px;
+ color:#999;
+ font-size:14px;
+ }
+.w_title img{
+ float:right;
+ cursor:pointer;
+ }
+ 
+
+#note{position:absolute;width:400px;padding:20px;background:#eee;border:1px solid #ccc;left:40%;z-index:9999;display:none;} 
+
+
+.monitor .table-hover tbody tr:hover td{
+  background-color: #f5f5f5;
+  color:#000;
+}
