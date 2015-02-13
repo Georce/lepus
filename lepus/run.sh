@@ -101,6 +101,6 @@ fi
 
 service httpd restart
 
-lepus start
+/lepus/python/lepus start
 
 exec /usr/bin/mysqld_safe

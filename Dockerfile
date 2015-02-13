@@ -12,7 +12,7 @@ RUN cd /lepus/MySQLdb1-master/ && python setup.py build && python setup.py insta
 
 COPY php /var/www/html
 
-RUN chmod 755 /lepus/python/install.sh && ./lepus/python/install.sh 
+RUN chmod 755 /lepus/python/lepus*
 
 EXPOSE 3306
 
