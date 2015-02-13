@@ -1,0 +1,5 @@
+[mariadb]
+name=mariadb
+gpgcheck=0
+enabled=1
+baseurl=http://yum.mariadb.org/10.0/centos6-amd64/

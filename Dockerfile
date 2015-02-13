@@ -4,17 +4,18 @@ MAINTAINER wujian@wujian360.cn
 
 COPY mariadb.repo /etc/yum.repos.d/mariadb.repo
 
-COPY MySQLdb1-master /MySQLdb1-master
-
-COPY pymongo-2.7 /pymongo-2.7
-
-COPY redis-2.10.3 /redis-2.10.3
+COPY lepus /lepus
 
 COPY php /var/www/html
 
-COPY python /python
+RUN yum install -y httpd php php-mysql unzip gcc libffi-devel python-devel openssl-devel tar MariaDB
 
-RUN chmod 755 /python/install.sh
+cd /lepus/MySQLdb1-master/ && python setup.py build && python setup.py install && cd /lepus/pymongo-2.7/ && python setup.py install && cd /lepus/redis-2.10.3/ && python setup.py install
 
-RUN yum install -y httpd php php-mysql wget unzip gcc libffi-devel python-devel openssl-devel tar MariaDB
+RUN chmod 755 /lepus/python/install.sh && ./lepus/python/install.sh 
 
+EXPOSE 3306
+
+EXPOSE 80
+
+CMD ["/lepus/run.sh"]
