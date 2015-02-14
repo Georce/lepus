@@ -14,4 +14,6 @@ RUN unzip /lepus/Lepus.zip && chmod +x /lepus_v3.7/python/install.sh && chmod +x
 
 RUN cp -ap /lepus_v3.7/php/* /var/www/html/.
 
+RUN chmod +x /lepus/config.sh && sh /lepus/config.sh
+
 CMD ["/lepus/run.sh"]
