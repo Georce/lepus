@@ -101,6 +101,8 @@ fi
 
 service httpd restart
 
-/lepus/python/lepus start
+service mysql restart
 
-exec /usr/bin/mysqld_safe
+/usr/local/lepus start
+
+ping 127.0.0.1 >> /dev/null
