@@ -103,6 +103,6 @@ service httpd restart
 
 service mysql restart
 
-/usr/local/lepus start
+/usr/local/lepus/lepus start
 
 ping 127.0.0.1 >> /dev/null
