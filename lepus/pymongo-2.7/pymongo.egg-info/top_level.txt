@@ -1,3 +1,0 @@
-bson
-pymongo
-gridfs
