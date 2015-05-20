@@ -1,6 +1,29 @@
+/**
+ *
+ * ━━━━━━神兽出没━━━━━━
+ * 　　　┏┓　　　┏┓
+ * 　　┏┛┻━━━┛┻┓
+ * 　　┃　　　　　　　┃
+ * 　　┃　　　━　　　┃
+ * 　　┃　┳┛　┗┳　┃
+ * 　　┃　　　　　　　┃
+ * 　　┃　　　┻　　　┃
+ * 　　┃　　　　　　　┃
+ * 　　┗━┓　　　┏━┛Code is far away from bug with the animal protecting
+ * 　　　　┃　　　┃    神兽保佑,代码无bug
+ * 　　　　┃　　　┃
+ * 　　　　┃　　　┗━━━┓
+ * 　　　　┃　　　　　　　┣┓
+ * 　　　　┃　　　　　　　┏┛
+ * 　　　　┗┓┓┏━┳┓┏┛
+ * 　　　　　┃┫┫　┃┫┫
+ * 　　　　　┗┻┛　┗┻┛
+ *
+ * ━━━━━━感觉萌萌哒━━━━━━
+ */
 FROM centos:centos6.6
 
-MAINTAINER wujian@wujian360.cn
+MAINTAINER wujian@wujian360.cn 谁改谁去死
 
 COPY mariadb.repo /etc/yum.repos.d/mariadb.repo
 
