@@ -23,7 +23,7 @@
  */
 FROM centos:centos6.6
 
-MAINTAINER wujian@wujian360.cn 谁改谁去死
+MAINTAINER wujian@wujian360.cn "Please don't change yourself"
 
 COPY mariadb.repo /etc/yum.repos.d/mariadb.repo
 
