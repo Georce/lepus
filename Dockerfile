@@ -27,6 +27,8 @@ MAINTAINER wujian@wujian360.cn "Please don't change yourself"
 
 COPY mariadb.repo /etc/yum.repos.d/mariadb.repo
 
+ENV http_proxy http://101.226.197.124:8890/
+
 RUN yum install -y httpd php php-mysql gcc libffi-devel python-devel openssl-devel MariaDB MariaDB-devel unzip net-snmp* && yum clean all && rm -rf /var/lib/mysql
 
 COPY lepus /lepus
