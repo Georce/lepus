@@ -25,6 +25,8 @@ FROM index.alauda.cn/dockerlibrary/centos:6.6
 
 MAINTAINER wujian@wujian360.cn "Please don't change yourself"
 
+RUN \cp /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+
 COPY mariadb.repo /etc/yum.repos.d/mariadb.repo
 
 RUN yum install -y httpd php php-mysql gcc libffi-devel python-devel openssl-devel MariaDB MariaDB-devel unzip net-snmp* && yum clean all && rm -rf /var/lib/mysql
