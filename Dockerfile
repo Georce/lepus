@@ -21,7 +21,7 @@
 # *
 # * ━━━━━━感觉萌萌哒━━━━━━
 # */
-FROM index.alauda.cn/dockerlibrary/centos:6.6
+FROM index.alauda.cn/library/centos:6.6
 
 MAINTAINER wujian@wujian360.cn "Please don't change yourself"
 
