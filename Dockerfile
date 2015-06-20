@@ -41,4 +41,6 @@ RUN cp -ap /lepus_v3.7/php/* /var/www/html/.
 
 RUN chmod +x /lepus/config.sh && sh /lepus/config.sh
 
+EXPOSE 80
+
 CMD ["/lepus/run.sh"]
